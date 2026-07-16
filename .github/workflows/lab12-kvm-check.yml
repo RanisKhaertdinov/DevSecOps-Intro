@@ -2,6 +2,9 @@ name: Lab 12 KVM Check
 
 on:
   workflow_dispatch:
+  push:
+    branches: [ feature/lab12 ]
+    paths: [ '.github/workflows/lab12-kvm-check.yml' ]
 
 permissions:
   contents: read
